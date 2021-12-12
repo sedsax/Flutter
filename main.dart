@@ -102,7 +102,7 @@ class _AnasayfaState extends State<Anasayfa> {
                 var kelime = kelimelerListesi[indeks];
                 return GestureDetector(
                   onTap: (){
-                    Navigator.push(context, MaterialPageRoute(builder: (context)=> DetaySayfa()));
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=> DetaySayfa(kelime: kelime,)));
                   },
                   child: SizedBox( height: 50,
                     child: Card(
